@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="horizontal"
+    tools:context=".creercompte">
+
+    <TextView
+        android:id="@+id/nomapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="YOUSPORT"
+        android:textColor="@color/texteprimaire"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/prenom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/fondedittext"
+        android:hint="Prénom"
+        android:inputType="text"
+        android:maxLength="30"
+        android:padding="12dp"
+        android:textColor="@color/texteprimaire"
+        android:textColorHint="@color/textesecondaire"
+        app:layout_constraintEnd_toStartOf="@+id/last_name"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomapp"
+        android:layout_margin="15dp"/>
+
+    <EditText
+        android:id="@+id/last_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/fondedittext"
+        android:hint="Nom"
+        android:inputType="text"
+        android:maxLength="30"
+        android:padding="12dp"
+        android:textColor="@color/texteprimaire"
+        android:textColorHint="@color/textesecondaire"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/prenom"
+        app:layout_constraintTop_toBottomOf="@+id/nomapp"
+        android:layout_margin="15dp"/>
+
+    <EditText
+        android:id="@+id/utilisateur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/fondedittext"
+        android:hint="Nom d'utilisateur"
+        android:inputType="text"
+        android:maxLength="30"
+        android:padding="12dp"
+        android:textColor="@color/texteprimaire"
+        android:textColorHint="@color/textesecondaire"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prenom"
+        android:layout_margin="15dp"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/fondedittext"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:maxLength="50"
+        android:padding="12dp"
+        android:textColor="@color/texteprimaire"
+        android:textColorHint="@color/textesecondaire"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/utilisateur"
+        android:layout_margin="15dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/fondedittext"
+        android:hint="Mot de passe"
+        android:inputType="textPassword"
+        android:maxLength="30"
+        android:padding="12dp"
+        android:textColor="@color/texteprimaire"
+        android:textColorHint="@color/textesecondaire"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        android:layout_margin="15dp"/>
+
+    <EditText
+        android:id="@+id/confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/fondedittext"
+        android:hint="Confirmer mot de passe"
+        android:inputType="textPassword"
+        android:maxLength="30"
+        android:padding="12dp"
+        android:textColor="@color/texteprimaire"
+        android:textColorHint="@color/textesecondaire"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        android:layout_margin="15dp"/>
+
+    <Button
+        android:id="@+id/bouttoncompte"
+        android:onClick="onClick2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginTop="208dp"
+        android:background="@drawable/bouttonfond"
+        android:text="Créer un compte"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_password" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
