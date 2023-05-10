@@ -1,0 +1,22 @@
+package com.projetandroid.app;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class creercompte extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.newcount);
+    }
+    public void onClick2(View v) {
+        if (v != null && v.getId() == R.id.bouttoncompte) {
+            Intent intent = new Intent(this, accueil.class);
+            startActivity(intent);
+        }
+    }
+}
