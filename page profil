@@ -1,5 +1,7 @@
+
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -53,17 +55,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.25" />
 
-    <ImageView
-        android:id="@+id/imageView6"
+    <ImageButton
+        android:id="@+id/fleche"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.022"
-        app:srcCompat="@drawable/baseline_arrow_back_24" />
+        app:srcCompat="@drawable/baseline_arrow_back_24"
+        android:onClick="onClick6"/>
 
     <Button
         android:id="@+id/button5"
@@ -71,7 +74,6 @@
         android:layout_height="70dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:backgroundTint="@color/beige"
         android:text="Notifications"
         android:drawableLeft="@drawable/baseline_notifications_active_24"
         android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
@@ -88,7 +90,6 @@
         android:layout_height="70dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:backgroundTint="@color/beige"
         android:text="Ma liste"
         android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
         android:drawableLeft="@drawable/baseline_check_24"
@@ -105,7 +106,6 @@
         android:layout_height="70dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:backgroundTint="@color/beige"
         android:text="Paramètres de l'application"
         android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
         android:drawableLeft="@drawable/baseline_settings_24"
@@ -122,7 +122,6 @@
         android:layout_height="70dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:backgroundTint="@color/beige"
         android:text="Paramètre du compte"
         android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
         android:drawableLeft="@drawable/baseline_person_24"
@@ -139,7 +138,6 @@
         android:layout_height="70dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:backgroundTint="@color/beige"
         android:text="Aide"
         android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
         android:drawableLeft="@drawable/baseline_help_center_24"
@@ -151,7 +149,7 @@
         app:layout_constraintVertical_bias="0.838" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/deconnecter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
@@ -163,7 +161,8 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.957" />
+        app:layout_constraintVertical_bias="0.957"
+        android:onClick="onClick7"/>
 
     <ImageView
         android:id="@+id/imageView9"
