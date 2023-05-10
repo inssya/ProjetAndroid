@@ -1,0 +1,29 @@
+package com.projetandroid.app;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class connexion extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.pageconnexion);
+    }
+    public void onClick1(View v) {
+        if (v.getId() == R.id.button) {
+            Intent intent = new Intent(this, accueil.class);
+            startActivity(intent);
+        }
+    }
+    public void onClick3(View v) {
+        if (v.getId() == R.id.button3) {
+            Intent intent = new Intent(this, creercompte.class);
+            startActivity(intent);
+        }
+    }
+
+
+}
