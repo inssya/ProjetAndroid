@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notifications"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/bottomToolbar"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:contentInsetStart="0dp"
+        >
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="40dp"
+            android:onClick="onClick9"
+            android:contentDescription="@string/homedesc"
+            android:src="@drawable/baseline_home_24" />
+
+        <ImageButton
+            android:id="@+id/mapButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="40dp"
+            android:src="@drawable/baseline_map_24"
+            android:contentDescription="@string/mapdesc"
+            app:layout_constraintStart_toEndOf="@id/homeButton" />
+
+        <ImageButton
+            android:id="@+id/notificationsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="40dp"
+            android:src="@drawable/baseline_notifications_24"
+            android:contentDescription="@string/notifications_description"
+            app:layout_constraintStart_toEndOf="@id/mapButton"/>
+
+        <ImageButton
+            android:id="@+id/accountButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="40dp"
+            android:src="@drawable/baseline_account_circle_24"
+            android:contentDescription="@string/profiledesc"
+            app:layout_constraintStart_toEndOf="@id/notificationsButton"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/bleu"
+                android:contentDescription="Notification 11"
+                android:drawableLeft="@drawable/baseline_fiber_manual_record_24"
+                android:gravity="left"
+                android:text="Participez à notre prochain concours de course à pied au parc d'acclimatation. Inscrivez-vous dès maintenant pour être prêt pour la course !"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/bleu"
+                android:contentDescription="Notification 10"
+                android:drawableLeft="@drawable/baseline_fiber_manual_record_24"
+                android:gravity="left"
+
+                android:text="Rejoignez-nous pour une journée incroyable de football au parc des princes. Obtenez vos billets dès maintenant pour ne pas manquer cette occasion unique !"
+                android:textColor="@color/black"
+
+                android:textSize="10sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/bleu"
+                android:contentDescription="Notification 9"
+                android:drawableLeft="@drawable/baseline_fiber_manual_record_24"
+                android:gravity="left"
+                android:text="Notre nouveau programme de yoga arrive ! Vous pouvez vous inscrire dès maintenant."
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/bleu"
+                android:contentDescription="Notification 2"
+                android:drawableLeft="@drawable/baseline_fiber_manual_record_24"
+                android:gravity="left"
+                android:text="Vous êtes un joueur de volley-ball passionné ? Rejoignez-nous pour notre prochain tournoi de volley-ball ."
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/beige2"
+                android:contentDescription="Notification 8"
+                android:gravity="left"
+                android:text="Notre prochain tournoi de tennis aura lieu bientôt. Inscrivez-vous maintenant pour réserver votre place !"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:backgroundTint="@color/beige2"
+                android:contentDescription="Notification 7"
+                android:gravity="left"
+                android:text="Nouvelle date ajoutée ! Le Marathon de Paris aura lieu le 15 avril. Inscrivez-vous dès maintenant et préparez-vous pour cette course épique !"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:backgroundTint="@color/beige2"
+                android:contentDescription="Notification 6"
+                android:gravity="left"
+                android:text="Ce week-end, assistez à un match de football de haut niveau au Stade de France ! Réservez vos places dès maintenant pour vivre l'excitation en direct."
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/beige2"
+                android:contentDescription="Notification 5"
+                android:gravity="left"
+                android:text="Ne manquez pas la finale de la Coupe de France de tennis qui se déroulera à Roland-Garros le 30 mai. Soyez prêt à soutenir vos joueurs préférés lors de cette compétition intense."
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:backgroundTint="@color/beige2"
+                android:contentDescription="Notification 4"
+                android:gravity="left"
+                android:text="Rappel : Le Tour de France passe par votre région demain ! Préparez-vous à voir les cyclistes de classe mondiale défier les montagnes et les routes pittoresques."
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/beige2"
+                android:contentDescription="Notification 3"
+                android:gravity="left"
+                android:text="Vivez l'excitation du Tournoi des Six Nations ! Les équipes nationales de rugby s'affronteront au Stade de France les 12 et 19 mars. Réservez vos places dès maintenant et soutenez votre équipe préférée."
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/beige2"
+                android:contentDescription="Notification 2"
+                android:gravity="left"
+                android:text="Le Championnat de Tennis de Table se déroule cette semaine à Paris ! Ne manquez pas l'occasion de voir les meilleurs joueurs du monde s'affronter au Palais Omnisports. Obtenez vos billets rapidement !"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:backgroundTint="@color/beige2"
+                android:contentDescription="Notification 1"
+                android:gravity="left"
+                android:text="Assistez à un concert inoubliable au Stade de France ! Les Rolling Stones se produiront le 18 juin pour une soirée rock légendaire. Réservez vos billets maintenant."
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
